@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand  {
+    font-weight: 500;
+}
+
+.nav-item {
+    font-weight: 500;
+    color: #3A6051;
+}
+
+.navbar-text {
+    font-weight: 500;
+}
+
+
+.btn-success {
+   background-color: #FFA63A !important;
+   color: #fff;
+}
+
+.btn-outline-success {
+    color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: #FFA63A !important;
+}
+
+section{
+    margin-bottom: 100px;
+}
+
+.headercontainer {
+    height: 600px;
+   width: 100%;
+    background-color: #3A6051;
+   /* background-image: url("./images/bg-img.jpg"); */
+   background-size: cover;
+   background-repeat: no-repeat;
+   resize: both;
+}
+
+
+#headercol{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#headbutton{
+    display: flex;
+    
+}
+
+#buttonhead {
+    margin-right: 10px;
+}
+
+.bgh1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+    color:#fff;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.bgp1 {
+    color:#fff;
+    font-weight: 100;
+    text-justify: auto;
+    width: 70%;
+}
+
+.bgimg {
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+
+/* About Section */
+@media only screen and (min-width: 980px) {
+
+.aboutcontainer {
+    margin-top: 100px;
+    height: 500px;
+}
+#aboutheader {
+    margin-top: 70px;  
+    
+}
+}
+
+.imgitem {
+
+    border-radius: 20px;
+}
+
+
+.bdyh2 {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.bdyp1 {
+    color: #000;
+}
+
+#btn4white {
+    color: #000;   
+}
+
+#btn4white:hover {
+    color: #fff;   
+}
+
+
+
+
+#aboutheader .btn-success{
+    border-color:#FFA63A !important;
+    
+}
+
+#aboutheader .btn-outline-success{
+    border-color: #FFA63A;
+}
+
+.bdyh2 {
+    color:#3A6051
+}
+/* End About Section */
+
+/* Product Section */
+.card {
+
+transition: 0.6s;
+
+}
+
+.card:hover {
+    box-shadow: 1px 1px #3A6051;
+}
+
+
+
+
+.card-img-top {
+    height:250px;
+}
+
+@media only screen and (max-width: 1000px)  and (min-width: 600px){
+
+    .card-img-top {
+        height:180px;
+    }
+
+}
+
+.card-img-top:hover {
+    opacity: 0.8;
+}
+
+div .card .btn-success{
+    display: flex;
+}
+
+.checked {
+    padding-top: 10px;
+    color: #FFA63A;
+}
+
+.card-body .btn {
+
+    margin-top: 20px;
+}
+
+.card-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+.card-title {
+    color:#3A6051;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#loadsection {
+    margin-top: 35px;
+}
+
+hr {
+    width: 25%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+/* Enddd Product Section */
+
+/* Contact Section */
+
+
+#contact {
+    height: fit-content;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.ctchead {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    
+}
+
+
+#ctcicons {
+    color: #FFA63A;
+    border-radius: 30%;
+  border: 2px solid grey;
+  padding: 5px;
+}
+
+#ctcicons:hover {
+    color: #3A6051;
+    border: 2px solid black;
+}
+
+
+
+/* End Contact Section */
+
+/* Footer */
+
+#my-footer{
+    min-height: fit-content;
+    margin-top: 30px;
+    background-color:#f5f6f7;
+}
+
+.footerheading{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    margin-bottom: 15px;
+}
+
+#fticons {
+    color: #FFA63A;
+}
+#fticons:hover {
+    color: #3A6051;
+}
+
