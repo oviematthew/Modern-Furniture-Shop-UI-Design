@@ -1,3 +1,5 @@
+/* Css Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,9 +24,85 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+    
 }
+
+:root {
+
+    --primary-color: #3A6051;
+    --secondary-color: #FFA63A;
+    --body-color: #f7f8fa;
+    --card-color: #f7f8fa;
+    --contact-heading: #000;
+    --paragraphs: #000;
+    --blockquotes: #6c757d;
+    --footer-color: #e8e8e8;
+    --footer-heading: #3A6051;
+    --footer-links: #6c757d;
+    --navbar: #fff;
+    --navbr-text: #000;
+    --navbar-toggle: #000;
+    --navbar-toggle-bg:  #00000000;
+    --copyright-link: #3A6051;
+    --hr-color:  #6c757d;
+
+}
+
+.dark-mode {
+
+    --primary-color: #3A6051;
+    --secondary-color: #FFA63A;
+    --body-color: #242525;
+    --card-color: #e3e3e3;
+    --contact-heading: #fff;
+    --card-text: #000;
+    --paragraphs: #c6c8cc;
+    --blockquotes: #fff;
+    --footer-color: #232324;
+    --footer-heading: #3A6051;
+    --footer-links: #c6c8cc;
+    --navbar: #232324;
+    --navbr-text: #fff;
+    --navbar-toggle-bg: #fff;
+    --copyright-link: #3A6051;
+    --hr-color:  #fff;
+}
+
+p {
+    color: var(--paragraphs);
+}
+
+.navbar-brand {
+    color: var(--navbr-text) ;
+}
+
+.nav-link {
+    color: var(--navbr-text);
+}
+.navbar  {
+    background-color: var(--navbar);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-toggler {
+    border-color: var(--navbar-toggle) ;
+    background-color: var(--navbar-toggle-bg) ;
+   
+}
+
+.navbar-toggler-icon {
+    color: var(--navbar-toggle);
+   
+}
+
+.blockquote-footer{
+    color: var(--blockquotes);
+}
+
 body {
 	line-height: 1;
+    background-color: var(--body-color) ;
 }
 ol, ul {
 	list-style: none;
@@ -41,6 +119,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* End Css Reset */
+
+
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -52,7 +133,7 @@ body{
 
 .nav-item {
     font-weight: 500;
-    color: #3A6051;
+    color: var(--primary-color);
 }
 
 .navbar-text {
@@ -60,8 +141,16 @@ body{
 }
 
 
+#icon {
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+   
+    
+}
+
 .btn-success {
-   background-color: #FFA63A !important;
+   background-color: var(--secondary-color) !important;
    color: #fff;
 }
 
@@ -70,7 +159,7 @@ body{
 }
 
 .btn-outline-success:hover {
-    background-color: #FFA63A !important;
+    background-color: var(--secondary-color) !important;
 }
 
 section{
@@ -80,7 +169,7 @@ section{
 .headercontainer {
     height: 600px;
    width: 100%;
-    background-color: #3A6051;
+    background-color: var(--primary-color);
    /* background-image: url("./images/bg-img.jpg"); */
    background-size: cover;
    background-repeat: no-repeat;
@@ -151,9 +240,7 @@ section{
     line-height: 55px;
 }
 
-.bdyp1 {
-    color: #000;
-}
+
 
 #btn4white {
     color: #000;   
@@ -167,16 +254,16 @@ section{
 
 
 #aboutheader .btn-success{
-    border-color:#FFA63A !important;
+    border-color:var(--secondary-color) !important;
     
 }
 
 #aboutheader .btn-outline-success{
-    border-color: #FFA63A;
+    border-color: var(--secondary-color);
 }
 
 .bdyh2 {
-    color:#3A6051
+    color:var(--primary-color)
 }
 /* End About Section */
 
@@ -188,7 +275,7 @@ transition: 0.6s;
 }
 
 .card:hover {
-    box-shadow: 1px 1px #3A6051;
+    box-shadow: 1px 1px var(--primary-color);
 }
 
 
@@ -199,9 +286,21 @@ transition: 0.6s;
 }
 
 @media only screen and (max-width: 1000px)  and (min-width: 600px){
-
+    
+    
+    
     .card-img-top {
         height:180px;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    #icon {
+        
+        padding-bottom: 10px;
+        
     }
 
 }
@@ -216,7 +315,11 @@ div .card .btn-success{
 
 .checked {
     padding-top: 10px;
-    color: #FFA63A;
+    color: var(--secondary-color);
+}
+
+.card-body {
+    background-color: var(--card-color);
 }
 
 .card-body .btn {
@@ -230,16 +333,23 @@ div .card .btn-success{
 }
 
 .card-title {
-    color:#3A6051;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 20px;
 }
+
+
+.card-text {
+    color: var(--card-text);
+}
+
 
 #loadsection {
     margin-top: 35px;
 }
 
 hr {
+    color: var(--hr-color) ;
     width: 25%;
     margin: auto;
     padding-bottom: 40px;
@@ -259,20 +369,24 @@ hr {
     font-size: 18px;
     font-weight: 500;
     padding-top: 20px;
+    color: var(--contact-heading);
     
 }
 
 
 #ctcicons {
-    color: #FFA63A;
+    color: var(--secondary-color);
     border-radius: 30%;
   border: 2px solid grey;
   padding: 5px;
 }
 
 #ctcicons:hover {
-    color: #3A6051;
+    color: var(--primary-color);
     border: 2px solid black;
+}
+label {
+    color: var(--paragraphs) ;
 }
 
 
@@ -284,7 +398,7 @@ hr {
 #my-footer{
     min-height: fit-content;
     margin-top: 30px;
-    background-color:#f5f6f7;
+    background-color:var(--footer-color);
 }
 
 .footerheading{
@@ -293,14 +407,37 @@ hr {
     margin-bottom: 20px;
 }
 
+.footerheading{
+ color: var(--footer-heading);
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: var(--footer-links) !important;
+}
+
 .copyright{
     margin-bottom: 15px;
+    color: var(--paragraphs);
+}
+
+.copyrightlink {
+    color: var(--copyright-link);
 }
 
 #fticons {
-    color: #FFA63A;
+    color: var(--secondary-color);
 }
 #fticons:hover {
-    color: #3A6051;
+    color: var(--primary-color);
 }
+
+#btn-back-to-top {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
 

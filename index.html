@@ -26,7 +26,7 @@
 
     <!-- Navbar -->
    
-    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+    <nav class="navbar navbar-light sticky-top navbar-expand-lg >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">FurNiture.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -46,14 +46,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
+              
             </ul>
+            <img src="/images/moon-regular.svg" id="icon">
             <form class="d-flex" >
                 <button class="btn btn-success" type="button">Contact Us</button>
               </form>
           </div>
         </div>
       </nav>
-    
+    <!-- End Navbar -->
  
     <!-- Page Background -->
     <section class="headercontainer" id="home">
@@ -68,8 +70,8 @@
                   </p>  
                   <br>
                   <div id="headbutton">
-                  <button class="btn btn-success" type="button" id="buttonhead">Get started</button>
-                  <button class="btn btn-outline-success" >See our portfolio</button>
+                  <button class="btn btn-success" type="button" id="buttonhead">Get Started</button>
+                  <button class="btn btn-outline-success" >See Our Portfolio</button>
                 </div>
                 </div>
               <div class="col-12 col-md-12 col-lg-7 d-none d-lg-block d-xl-block d-xxl-block">
@@ -101,7 +103,7 @@
                       </p>  
                       <br>
                       <br>
-                      <button class="btn btn-success" type="button">See our portfolio</button>
+                      <button class="btn btn-success" type="button">See Our Portfolio</button>
                     </div>
           </div>
       </div>   
@@ -373,7 +375,7 @@
           </div>
       
           <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p class="copyright">&copy; 2022 FurNiture, Inc. All rights reserved. Designed By <a href="https://www.instagram.com/anomali_tech/?hl=en">Enamuotor Matthew Ovie</a></p>
+            <p class="copyright">&copy; 2022 FurNiture, Inc. All rights reserved. Designed By <a class="copyrightlink" href="https://www.instagram.com/anomali_tech/?hl=en">Enamuotor Matthew Ovie</a></p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><i class="fa-brands fa-twitter" id="fticons"></i></li>
               <li class="ms-3"><i class="fa-brands fa-instagram" id="fticons"></i></li>
@@ -384,6 +386,12 @@
     </div>
       </div>
     <!-- End Footer -->
+
+      <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+       <!-- End back to top button -->
 
      <script src="myjs.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
